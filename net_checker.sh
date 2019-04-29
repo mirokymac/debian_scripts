@@ -52,8 +52,7 @@ if [ $NET_CHECKER_LOCK -eq 0 ]; then
         for iif in ${iifs}
         do
             /sbin/ifup ${iif}
-           echo "$iif"
-           echo " $iff up again..."
+           echo " $iif up again..."
         done
         sleep 1
 	echo 0 > /root/.cache/NET_CHECKER_LOCK
